@@ -1,0 +1,72 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Majestic Coding Xbox API",
+        "description": "A simple API to get Xbox account info, player summary, and friends"
+    },
+    "host": "localhost:3000",
+    "basePath": "/",
+    "schemes": [
+        "http"
+    ],
+    "paths": {
+        "/get-xbox-account-info": {
+            "get": {
+                "summary": "Get Xbox account info",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "schema": {
+                            "type": "object"
+                        }
+                    },
+                    "default": {
+                        "description": "Error",
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        "/player-summary": {
+            "get": {
+                "summary": "Get player summary",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "schema": {
+                            "type": "object"
+                        }
+                    },
+                    "default": {
+                        "description": "Error",
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        "/friends": {
+            "get": {
+                "summary": "Get friends",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "schema": {
+                            "type": "object"
+                        }
+                    },
+                    "default": {
+                        "description": "Error",
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
